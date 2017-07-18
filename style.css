@@ -1,0 +1,264 @@
+main {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  display: flex;
+  color: white;
+}
+#multi-tile-container {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#carosel-image {
+  position: relative;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/98/aa/57/98aa576348acd3ad5c7096114736022f--cthulu-cthulhu-mythos.jpg);
+  display: flex;
+  width: 39%;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+}
+
+.nav-arrows {
+  height: 50px;
+  width: 50px;
+  opacity: 0.5;
+}
+
+.three-dots {
+list-style: none;
+padding: 1px;
+position: absolute;
+top: .7em;
+right: .7em;
+opacity: 0.5;
+}
+.three-dots img {
+  width: 1em;
+}
+
+ul {
+
+}
+
+li {
+  display: inline-block;
+  padding: .1em;
+}
+
+.info-tile {
+  display: inline-block;
+  display: flex;
+  height: 33.33%;
+  width: 66.66%;
+  background-color: #3B0D11;
+  flex-direction: column;
+}
+
+.my-name {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 25px;
+  height: 50px;
+  width: 300px;
+  border-width: medium;
+}
+
+.bio-info {
+  font-size: 15px;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-container img {
+  height: 25px;
+  width: 25px;
+  padding-right: .5em;
+  margin-left: -1em;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+  padding-left: 25px;
+  border: solid 3px white;
+  width: 165px;
+  flex-direction: row;
+}
+
+.contact {
+  align-items: center;
+  display: flex;
+  margin: 25px;
+  padding-left: 25px;
+  border: solid 3px white;
+  width: 165px;
+  flex-direction: row;
+}
+
+.top-right-tile {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #485665;
+}
+
+.zombie {
+  width: 100px;
+  height: 100px;
+}
+
+.upper-left {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #30292F;
+}
+
+.vampire {
+  width: 100px;
+  height: 100px;
+}
+
+.upper-middle {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #3B3B58;
+}
+
+.mummy {
+  width: 100px;
+  height: 100px;
+}
+
+.upper-right {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #6E675F;
+}
+
+.dragon {
+  width: 100px;
+  height: 100px;
+}
+
+.lower-left {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #2B193D;
+}
+
+.alien {
+  width: 100px;
+  height: 100px;
+}
+
+.lower-middle {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #225560;
+}
+
+.adam {
+  width: 100px;
+  height: 100px;
+}
+
+.lower-right {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 33.33%;
+  width: 33.33%;
+  background-color: #5D737E;
+}
+
+.megalodon {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 850px) {
+  #carosel-image {
+    width: 100%;
+    display: block;
+  }
+  #multi-tile-container {
+    width: 100%;
+    display: inline-flex;
+    }
+  main {
+    flex-direction: column;
+  }
+  .resume .contact {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  #carosel-image {
+    flex-wrap: wrap;
+    width: 100%;
+    display: block;
+  }
+  #multi-tile-container {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .info-tile {
+    width: 100%;
+  }
+  .tile {
+    width: 50%;
+  }
+  .tile1 {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  #multi-tile-container {
+
+  }
+}
